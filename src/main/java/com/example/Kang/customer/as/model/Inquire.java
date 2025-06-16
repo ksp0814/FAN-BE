@@ -23,7 +23,10 @@ public class Inquire {
     private String name; // 문의자 이름
 
     @Column(nullable = false, length = 50)
-    private String contact; // 연락처(전화번호)
+    private String phoneNumber; // 연락처(전화번호)
+
+    @Column(nullable = false, length = 100)
+    private String email;
 
     @Column(nullable = false, length = 200)
     private String title; // 문의 제목
